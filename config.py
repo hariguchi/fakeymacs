@@ -1,5 +1,16 @@
 ﻿# -*- mode: python; coding: utf-8-with-signature-dos -*-
 
+##
+## This file is slightly modified version of
+## https://github.com/hariguchi/fakeymacs/blob/master/config.py 
+## Precisely speaking, the followings are changed:
+##
+##  #clipboardList_key = "A-y"
+##  clipboardList_key = "C-A-y"
+##
+##  #lancherList_key = "A-l"
+##  lancherList_key = "C-A-l"
+##
 ##                               nickname: fakeymacs
 ##
 ## Windows の操作を emacs のキーバインドで行うための設定（Keyhac版）ver.20170823_01
@@ -205,10 +216,12 @@ def configure(keymap):
     other_window_key = "A-o"
 
     # クリップボードリストを起動するキーを指定する
-    clipboardList_key = "A-y"
+    #clipboardList_key = "A-y"
+    clipboardList_key = "C-A-y"
 
     # ランチャーリストを起動するキーを指定する
-    lancherList_key = "A-l"
+    #lancherList_key = "A-l"
+    lancherList_key = "C-A-l"
 
     # アクティブウィンドウを切り替えるキーの組み合わせ（前、後 の順）を指定する（複数指定可）
     # （内部で A-Tab による切り替えを行っているため、設定するキーは Altキーとの組み合わせとしてください）
